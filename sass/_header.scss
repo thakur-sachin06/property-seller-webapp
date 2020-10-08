@@ -1,0 +1,6 @@
+.header {
+  background-color: $color-secondary;
+  grid-column: full-start / col-end 6;
+  // starting from full-start and then we have used set
+  //so we have to tell the column till we want in the sets
+}
