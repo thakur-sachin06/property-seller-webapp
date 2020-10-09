@@ -199,7 +199,8 @@ body {
 img {
   width: 100%;
   grid-column: 1 / -1;
-  grid-row: 1/2; }
+  grid-row: 1/2;
+  transition: all 0.2s; }
 
 .btn {
   grid-column: 1 / -1; }
@@ -209,5 +210,27 @@ img {
   grid-column: full-start / full-end; }
 
 .footer {
-  background-color: blue;
-  grid-column: full-start / full-end; }
+  background-color: #101d2c;
+  grid-column: full-start / full-end;
+  padding: 8rem; }
+
+.list {
+  list-style: none;
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem; }
+  .list__link:link, .list__link:visited {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all 0.2s; }
+  .list__link:hover, .list__link:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px); }
